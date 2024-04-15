@@ -54,7 +54,7 @@ const PropertyDetails = () => {
 				<h2 className='text-3xl text-center font-semibold' data-aos='fade-up' data-aos-anchor-placement='bottom-center'>
 					Details
 				</h2>
-				<div className='bg-[#E8F3F1] rounded-xl p-4 my-8 flex justify-center' data-aos='fade-left' data-aos-anchor-placement='center-center'>
+				<div className='bg-[#E8F3F1] rounded-xl p-4 my-8 flex justify-center' data-aos='fade-down' data-aos-anchor-placement='center-center'>
 					<div className='w-3/4 flex flex-col text-black'>
 						<div className='flex justify-between items-center gap-2'>
 							<p className='text-lg font-bold'>Price:</p>
