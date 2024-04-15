@@ -74,11 +74,7 @@ const Login = () => {
 						<span className='absolute bottom-8 right-4 cursor-pointer' onClick={() => setShowPassword(!showPassword)}>
 							{showPassword ? <FaEyeSlash /> : <FaEye />}
 						</span>
-						<div className='flex justify-end text-xs text-gray-600'>
-							<a rel='noopener noreferrer' href='#'>
-								Forgot Password?
-							</a>
-						</div>
+						<div className='flex justify-end text-xs text-gray-600'>Forgot Password ?</div>
 					</div>
 					<button className='block w-full p-3 text-center rounded-sm text-gray-50 bg-[#5EC2AC]'>Sign in</button>
 				</form>
