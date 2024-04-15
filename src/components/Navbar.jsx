@@ -96,9 +96,11 @@ const Navbar = () => {
 					</ul>
 				</div>
 
-				<h1 data-aos='fade-right' className='text-xl sm:text-3xl font-bold leading-8 text-center sm:text-left logo'>
-					LuxeNest
-				</h1>
+				<Link to='/'>
+					<h1 data-aos='fade-right' className='text-xl sm:text-3xl font-bold leading-8 text-center sm:text-left logo'>
+						LuxeNest
+					</h1>
+				</Link>
 			</div>
 			<div className='navbar-center hidden lg:flex'>
 				<ul className='menu menu-horizontal gap-8 items-center'>
