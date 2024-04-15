@@ -15,10 +15,10 @@ const PropertyDetails = () => {
 				<title>LuxeNest | Property Detail</title>
 			</Helmet>
 			<figure className='w-full rounded-xl relative' data-aos='zoom-in' data-aos-delay='900'>
-				<div className='absolute backdrop-blur-[3px] bg-white/10 z-20 h-[200px] bottom-0 w-full'></div>
+				<div className='absolute backdrop-blur-[4px] sm:backdrop-blur-[3px] bg-white/10 z-20 h-[300px] sm:h-[200px] bottom-0 w-full'></div>
 				<div className='relative h-[600px] flex justify-center'>
 					<img src={`${estate.image}?quality=50`} alt='Shoes' className='w-full h-full object-cover rounded-xl' />
-					<div className='flex justify-between gap-4 text-white absolute bottom-20 z-30 w-3/4'>
+					<div className='flex flex-col sm:flex-row sm:justify-between gap-4 text-white absolute bottom-20 z-30 w-3/4'>
 						<div className='flex flex-col gap-2'>
 							<h1 className='text-white font-semibold text-2xl'>{estate.estate_title}</h1>
 							<p className='flex gap-2 font-light items-center'>
@@ -27,7 +27,7 @@ const PropertyDetails = () => {
 							</p>
 						</div>
 
-						<div className='flex flex-col gap-2'>
+						<div className='flex flex-col gap-2 mt-4 sm:mt-0'>
 							<h3 className='font-bold text-2xl'>{estate.price}</h3>
 							<p className='flex gap-2 text-right font-light items-center'>
 								<TfiRulerAlt2 />
@@ -38,7 +38,7 @@ const PropertyDetails = () => {
 				</div>
 			</figure>
 
-			<div className='flex flex-col mt-12'>
+			<div className='flex flex-col mt-20'>
 				<h2 className='text-3xl text-center font-semibold' data-aos='fade-down' data-aos-anchor-placement='bottom-center'>
 					Description
 				</h2>
@@ -54,32 +54,35 @@ const PropertyDetails = () => {
 				<h2 className='text-3xl text-center font-semibold' data-aos='fade-up' data-aos-anchor-placement='bottom-center'>
 					Details
 				</h2>
-				<div className='bg-[#E8F3F1] rounded-xl p-4 my-8 flex justify-center' data-aos='fade-down' data-aos-anchor-placement='center-center'>
+				<div
+					className='bg-[#E8F3F1] rounded-xl py-4 sm:p-4 my-8 flex justify-center'
+					data-aos='fade-down'
+					data-aos-anchor-placement='center-center'>
 					<div className='w-3/4 flex flex-col text-black'>
 						<div className='flex justify-between items-center gap-2'>
-							<p className='text-lg font-bold'>Price:</p>
-							<p>{estate.price}</p>
+							<p className='text-sm sm:text-lg font-bold'>Price:</p>
+							<p className='text-sm lg:text-base text-right'>{estate.price}</p>
 						</div>
 						<div className='divider'></div>
 
 						<div className='flex justify-between items-center gap-2'>
-							<p className='text-lg font-bold'>Property Size:</p>
-							<p>{estate.area}</p>
+							<p className='text-sm sm:text-lg font-bold'>Property Size:</p>
+							<p className='text-sm lg:text-base text-right'>{estate.area}</p>
 						</div>
 						<div className='divider'></div>
 
 						<div className='flex justify-between items-center gap-2'>
-							<p className='text-lg font-bold'>Property Type:</p>
-							<p>{estate.segment_name}</p>
+							<p className='text-sm sm:text-lg font-bold'>Property Type:</p>
+							<p className='text-sm lg:text-base text-right'>{estate.segment_name}</p>
 						</div>
 						<div className='divider'></div>
 
 						<div className='flex justify-between items-center gap-2'>
-							<p className='text-lg font-bold'>Property Facilities:</p>
-							<div className='flex gap-2'>
+							<p className='text-sm sm:text-lg font-bold'>Property Facilities:</p>
+							<div className='flex gap-2 lg:flex-row flex-col'>
 								{estate.facilities &&
 									estate.facilities.map((facility, index) => (
-										<p key={index}>
+										<p className='text-sm lg:text-base text-right' key={index}>
 											{facility}
 											{index === 2 ? "" : ","}
 										</p>
@@ -89,14 +92,14 @@ const PropertyDetails = () => {
 						<div className='divider'></div>
 
 						<div className='flex justify-between items-center gap-2'>
-							<p className='text-lg font-bold'>Property Status:</p>
-							<p>{estate.status}</p>
+							<p className='text-sm sm:text-lg font-bold'>Property Status:</p>
+							<p className='text-sm lg:text-base text-right'>{estate.status}</p>
 						</div>
 						<div className='divider'></div>
 
 						<div className='flex justify-between items-center gap-2'>
-							<p className='text-lg font-bold'>Address</p>
-							<p>{estate.location}</p>
+							<p className='text-sm sm:text-lg font-bold'>Address</p>
+							<p className='text-sm lg:text-base text-right'>{estate.location}</p>
 						</div>
 						<div className='divider'></div>
 					</div>
