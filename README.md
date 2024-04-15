@@ -23,10 +23,10 @@ Here are some features and characteristics of our website
 
 * we use private routing. Only users who signed up can use this private route
 
+* we added a errorpage
+
 * we use various npm packages :
-  
           * For animate : https://www.npmjs.com/package/aos
           * For form : https://react-hook-form.com/
           * For slider : https://swiperjs.com/
 
-* we added a errorpage
