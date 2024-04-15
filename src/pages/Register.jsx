@@ -56,7 +56,7 @@ const Register = () => {
 				className='w-full max-w-md p-8 space-y-3 rounded-xl bg-[#E8F3F1] drop-shadow-xl mx-4 sm:mx-0'
 				data-aos='zoom-in-down'
 				data-aos-delay='800'>
-				<h1 className='text-2xl font-bold text-center'>Login</h1>
+				<h1 className='text-2xl font-bold text-center'>Sign Up</h1>
 				<form action='' className='space-y-6' onSubmit={handleSubmit(onSubmit)}>
 					<div className='space-y-1 text-sm'>
 						<label htmlFor='name' className='block text-gray-600'>
