@@ -56,5 +56,5 @@ const HeroSlide = ({ estates }) => {
 export default HeroSlide
 
 HeroSlide.propTypes = {
-	estates: PropTypes.object,
+	estates: PropTypes.array,
 }

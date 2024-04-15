@@ -24,5 +24,5 @@ const Estates = ({ estates }) => {
 export default Estates
 
 Estates.propTypes = {
-	estates: PropTypes.object,
+	estates: PropTypes.array,
 }
