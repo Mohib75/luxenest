@@ -26,7 +26,7 @@ Here are some features and characteristics of our website
 * we added a errorpage
 
 * we use various npm packages :
-          * For animate : https://www.npmjs.com/package/aos
-          * For form : https://react-hook-form.com/
-          * For slider : https://swiperjs.com/
+  * For animate : https://www.npmjs.com/package/aos
+  * For form : https://react-hook-form.com/
+  * For slider : https://swiperjs.com/
 
