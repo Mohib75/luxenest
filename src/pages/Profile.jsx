@@ -1,11 +1,13 @@
 import { useForm } from "react-hook-form"
 import useAuth from "../hooks/useAuth"
 import toast from "react-hot-toast"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Helmet } from "react-helmet-async"
 
 const Profile = () => {
 	const { user, updateUserProfile } = useAuth()
+	const [name, setName] = useState(user.displayName || "")
+	const [image, setImage] = useState(user.photoURL || "")
 
 	const { register, handleSubmit, setValue } = useForm()
 
@@ -19,7 +21,9 @@ const Profile = () => {
 
 		updateUserProfile(name, image)
 			.then(() => {
-				toast.success("updated successfully. Please reload the page")
+				toast.success("updated successfully.")
+				setName(name)
+				setImage(image)
 			})
 			.catch(() => {
 				toast.error("invalid email/password")
@@ -37,10 +41,10 @@ const Profile = () => {
 				data-aos-easing='ease-out-cubic'
 				data-aos-duration='2000'
 				data-aos-delay='800'>
-				<img src={user.photoURL} alt='photo' className='w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square' />
+				<img src={image} alt='photo' className='w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square' />
 				<div className='space-y-4 text-center divide-y divide-gray-300'>
 					<div className='my-2 space-y-1'>
-						<h2 className='text-xl font-semibold sm:text-2xl'>Name: {user.displayName}</h2>
+						<h2 className='text-xl font-semibold sm:text-2xl'>Name: {name}</h2>
 						<p className='px-5 text-xs sm:text-base text-gray-600'>Email: {user?.email || "no email"}</p>
 					</div>
 				</div>
