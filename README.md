@@ -17,7 +17,7 @@ Here are some features and characteristics of our website
 
 * React Router dom  is for the api fetching and routing through the page
 
-* we use a our own created json file for this properties
+* we used our own created json file for this properties
 
 * we use also a slider in our home page
 
