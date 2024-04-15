@@ -11,7 +11,7 @@ This is a real state luxury category website, where you can see all type of prop
 
 Website Name: LuxeNest
 
-Live LInk : https://luxe-nest.surge.sh/
+Live Link : https://luxe-nest.surge.sh/
 
 Here are some features and characteristics of our website
 
@@ -23,9 +23,10 @@ Here are some features and characteristics of our website
 
 * we use private routing. Only users who signed up can use this private route
 
- we use various npm packages : 
-          - For animate : https://www.npmjs.com/package/aos
-          - For form : https://react-hook-form.com/
-          - For slider : https://swiperjs.com/
+* we use various npm packages :
+  
+          * For animate : https://www.npmjs.com/package/aos
+          * For form : https://react-hook-form.com/
+          * For slider : https://swiperjs.com/
 
 * we added a errorpage
