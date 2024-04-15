@@ -11,3 +11,25 @@
 body {
 	font-family: "Platypi", serif;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
+.logo {
+	background: #5ec2a3;
+	background: linear-gradient(to right, #5ec2a3, #52cea2, #47da9f, #40e59a, #3df092);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shimmer 20s infinite linear;
+}
+
+/* Define keyframes for the animation */
+@keyframes shimmer {
+	0% {
+		background-position: -1000px;
+	}
+	100% {
+		background-position: 1000px;
+	}
+}
