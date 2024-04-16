@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 This is a real state luxury category website, where you can see all type of properties under the luxury category
 
-Website Name: LuxeNest
+# Website Name: LuxeNest
 
 Live Link : https://luxe-nest.surge.sh/
 
