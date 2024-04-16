@@ -19,6 +19,8 @@ const Footer = () => {
 			<nav>
 				<div className='grid grid-flow-col gap-4'>
 					<Link
+						to='https://twitter.com/'
+						target='_blank'
 						className='hover:scale-110 transform transition-all duration-500'
 						data-aos='fade-down'
 						data-aos-delay='1000'
@@ -26,6 +28,8 @@ const Footer = () => {
 						<FaTwitter className='text-3xl text-[#1DA1F2]' />
 					</Link>
 					<Link
+						to='https://web.facebook.com/'
+						target='_blank'
 						className='hover:scale-110 transform transition-all duration-500'
 						data-aos='fade-down'
 						data-aos-delay='1200'
@@ -33,6 +37,8 @@ const Footer = () => {
 						<FaFacebookF className='text-3xl text-[#4267B2]' />
 					</Link>
 					<Link
+						to='https://www.youtube.com/'
+						target='_blank'
 						className='hover:scale-110 transform transition-all duration-500'
 						data-aos='fade-down'
 						data-aos-delay='1400'
